@@ -1,0 +1,57 @@
+h1 {
+  font-family: 'Delius Unicase', cursive;
+}
+
+#map-start {
+  border: 1px solid;
+  height: 100vh;
+}
+
+
+.options-box {
+    background: #dff0d8;
+    border: 1px solid #f2dede;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    height: 100vh;
+    box-shadow: 10px 10px 20px #888888;
+}
+
+#scroll {
+  max-height: 300px;
+  margin: 10px;
+  background-color: #eee;
+}
+
+/*#font {
+  font-family: 'Shrikhand', cursive;
+  font-size: 15px;
+}*/
+
+li:hover {
+    background-color: #eec;
+    font-size: 18px;
+    font-weight: bold;
+    cursor:pointer
+}
+
+
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 20px;
+    }
+    .options-box{
+      height: 40vh;
+    }
+    #map-start {
+      height: 60vh;
+      padding-left: 0px;
+    }
+    li {
+      font-size: 13px;
+    }
+    #scroll {
+      max-height: 150px;
+    }
+  }
