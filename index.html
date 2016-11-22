@@ -12,35 +12,37 @@
   <body>
 	<!-- Bootstrap Container -->
 	<div class="container">
-		<div class="row">
+		<main class="row">
 			<!-- Option Box for Medium and Small Devices -->
-		  <div class="col-md-4 col-sm-12 options-box">
+			<article class="col-md-4 col-sm-12 options-box">
 				<h1>Yummy Bengaluru!</h1>
-			<div>
+				<section>
 					<!-- Restaurant DropDown -->
-					<div class="dropdown">
+					<section class="dropdown">
 						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-							Type of Restaurant<span class="caret"> </span></button>
-							<!-- Foursquare Font Awseome :) -->
-							<i class="fa fa-foursquare fa-lg" aria-hidden="true"> With Foursquare APIs</i>
+						Type of Restaurant<span class="caret"> </span></button>
+						<!-- Foursquare Font Awseome :) -->
+						<i class="fa fa-foursquare fa-lg" aria-hidden="true"> With Foursquare APIs</i>
 						<!-- Filter Option -->
 						<ul class="dropdown-menu">
-							<li id="Non-Veg" data-bind="click: getNonVeg"><a href="">Non-Veg</a></li>
-							<li id="Veg" data-bind="click: getVeg"><a href="">Veg</a></li>
-							<li data-bind="click:displayAll"><a href="">All</a></li>
+							<li data-bind="click: getNonVeg"><a href="">Non-Veg</a></li>
+							<li data-bind="click: getVeg"><a href="">Veg</a></li>
+							<li data-bind="click: displayAll"><a href="">All</a></li>
 						</ul>
-					</div>
+					</section>
 					<!-- Scroll Option -->
-					<div id="scroll" class="pre-scrollable">
-					<ul data-bind= "foreach: locationList()">
-						<!-- MouseOver Event couldn't be implemented optmimally :( -->
-						<li data-bind="text: restaurantTitle, visible: listVisible, click: $root.viewInfoWindowOnListClick, event: { mouseover: $parent.highlightMarker }, attr: {markerNo: restaurantNumber}"></li>
-					</ul></div>
-				</div>
-			</div>
+					<section id="scroll" class="pre-scrollable">
+						<ul data-bind= "foreach: locationList()">
+							<!-- MouseOver Event couldn't be implemented optmimally :( -->
+							<li data-bind="text: restaurantTitle, visible: listVisible, click: $root.viewInfoWindowOnListClick,
+							event: { mouseover: $parent.highlightMarker }, attr: {markerNo: restaurantNumber}"></li>
+						</ul>
+					</section>
+				</section>
+			</article>
 			<!-- Map for Medium and Small Devices -->
-  		<div class="col-md-8 col-sm-12" id="map-start"></div>
-	</div>
+  		<article class="col-md-8 col-sm-12" id="map-start"></article>
+  	</main>
   </div>
 
   <script type="text/javascript" src="js/lib/jquery-3.1.1.js"></script>
